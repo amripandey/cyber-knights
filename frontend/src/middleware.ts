@@ -8,7 +8,7 @@ import { verifySession } from '@/app/auth/session';
 // Define public routes that don't require authentication
 
 // Define public routes
-const publicRoutes = [ '/' ,'/login', '/signup', '/api/public'];
+const publicRoutes = [ '/' ,'/login', '/signup', '/api/*'];
 
 export async function middleware(req: NextRequest) {
     const { pathname } = req.nextUrl;
